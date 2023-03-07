@@ -408,7 +408,7 @@ class Wallet
             return Wallet.NamiInterface;
         }            
         else if(
-            wallet = Wallet.Names.Eternl ||
+            wallet === Wallet.Names.Eternl ||
             wallet === Wallet.Names.CCVault
         )
         {
@@ -570,6 +570,7 @@ class Wallet
             */
             case Wallet.Names.Nami:               return ( Wallet._namiObj !== undefined );
             case Wallet.Names.CCVault:            return ( Wallet._eternlObj !== undefined );
+            case Wallet.Names.Eternl:             return ( Wallet._eternlObj !== undefined );
             case Wallet.Names.Flint:              return ( Wallet._flintObj !== undefined );
             case Wallet.Names.Yoroi:              return ( Wallet._yoroiObj !== undefined );
             case Wallet.Names.Gero:               return ( Wallet._geroObj !== undefined );
